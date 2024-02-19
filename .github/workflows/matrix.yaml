@@ -12,6 +12,8 @@ jobs:
         include:
           - color: pink
             animal: cat
+          - color: red
+            animal: cat
           - shape: circle
             animal: mouse
     steps:
