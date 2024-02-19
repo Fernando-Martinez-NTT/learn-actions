@@ -16,5 +16,6 @@ jobs:
             animal: cat
           - shape: circle
             animal: mouse
+          - vehicle: car
     steps:
     - run: echo ${{ matrix.animal }} ${{ matrix.fruit }} ${{ matrix.color }}
