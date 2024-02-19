@@ -18,4 +18,4 @@ jobs:
             animal: mouse
           - vehicle: car
     steps:
-    - run: echo ${{ matrix.animal }} ${{ matrix.fruit }} ${{ matrix.color }}
+    - run: echo ${{ matrix.animal }} ${{ matrix.fruit }} ${{ matrix.color }} ${{ matrix.shape }} ${{ matrix.vehicle }}
