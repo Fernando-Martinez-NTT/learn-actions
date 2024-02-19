@@ -1,0 +1,16 @@
+name: Matrix
+
+on: workflow_dispatch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        animal: [cat, dog]
+        fruit: [apple, pear]
+        include:
+          - color: pink
+            animal: cat
+    steps:
+    - run: echo ${{ matrix.animal }} ${{ matrix.fruit }} ${{ matrix.color }}
