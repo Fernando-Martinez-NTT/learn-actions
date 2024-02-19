@@ -12,5 +12,6 @@ jobs:
         include:
           - color: pink
             animal: cat
+          - shape: circle
     steps:
     - run: echo ${{ matrix.animal }} ${{ matrix.fruit }} ${{ matrix.color }}
